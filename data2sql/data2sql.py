@@ -3,12 +3,14 @@
 Rongxin Yin, 11/2/2016
 
 """
+from __future__ import division
 
+import csv
 import pandas as pd
+import numpy as np
+#import matplotlib.pylot as plt
+import datetime
+
 import seaborn as sns
 
-a = [1,2,3]
-
-df = pd.DataFrame(a,['a','b','c'])
-
-print("Done")
+customers = pd.read_csv('../../2016/PGE/D1977_OFFICE_LBNL.csv', delimiter=',')
